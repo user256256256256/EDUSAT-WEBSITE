@@ -19,34 +19,17 @@ class Topbar extends HTMLElement {
                   <ul class="list-inline">
                       <!-- Social media icons -->
                       <li>
-                          <a class="social" href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
-                          <a class="social" href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-                          <a class="social" href="#" aria-label="Whatsapp"><i class="fa fa-whatsapp"></i></a>
+                         <!-- <a class="social" href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                          <a class="social" href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>  -->
+                          <a class="social" aria-label="Chat on WhatsApp" href="https://wa.me/+256700274249" aria-label="Whatsapp"><i class="fa fa-whatsapp"></i></a>
                       </li>
   
                       <!-- Dropdown for Login and Register -->
                       <li class="dropdown">
+                          <!-- Provide the url to the ERP login route -->
                           <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <i class="fa fa-lock"></i> Login & Register
                           </a>
-  
-                          <div class="dropdown-menu">
-                              <!-- Login form inside the dropdown -->
-                              <form method="post">
-                                  <div class="form-title">
-                                      <h4>Login Area</h4>
-                                      <hr>
-                                  </div>
-                                  <input class="form-control" type="text" name="username" placeholder="Username" aria-label="Username">
-                                  <div class="formpassword">
-                                      <input class="form-control" type="password" name="password" placeholder="Password" aria-label="Password">
-                                  </div>
-                                  <div class="clearfix"></div>
-                                  <button type="submit" class="btn btn-block btn-primary">Login</button>
-                                  <hr>
-                                  <h4><a href="#">Create an Account</a></h4>
-                              </form>
-                          </div>
                       </li>
                   </ul>
               </div>
@@ -63,7 +46,7 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <!-- Header Section -->
-<header class="header">
+<header class="header ">
     <div class="container">
         <!-- Hover menu and navigation bar -->
         <div class="hovermenu ttmenu">
@@ -91,12 +74,13 @@ class Header extends HTMLElement {
                         <li><a href="page-features.html">Features</a></li>
                         <li><a href="page-contact.html">Contact</a></li>
                         <li><a href="page-request-demo.html">Request Demo</a></li>
+                        <li><a href="page-about.html">About us</a></li>
                     </ul>
 
                     <!-- Right-aligned navigation link (Register Now button) -->
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a class="btn btn-primary" href="course-login.html">
+                            <a class="btn btn-primary" href="page-request-demo.html">
                                 <i class="fa fa-sign-in"></i> Register Now
                             </a>
                         </li>
@@ -122,9 +106,15 @@ class Endbar extends HTMLElement {
             <!-- Left-aligned: Attribution to the source (Templates Hub) -->
             <div class="col-md-6 text-left">
                 <p>
-                    <!-- Link to Templates Hub with a new tab opening -->
-                    <a target="_blank" href="https://www.templateshub.net" aria-label="Visit Templates Hub">
+                    <a target="_blank" href="https://www.eurosatgroup.com/" aria-label="Visit Eurosat Group">
                         A product of Eurosat Group of Companies Ltd
+                    </a>
+                </p>
+            </div>
+            <div class="col-md-6 text-right">
+                <p>
+                    <a target="_blank" href="#">
+                       All rights reserverd
                     </a>
                 </p>
             </div>
@@ -152,7 +142,7 @@ class Footer extends HTMLElement {
                         <hr>
                     </div>
                     <p>Eurosat Group provides the highest quality in Enterprise Resource Planning systems and services to meet the demand of Academic Institutions today.                    </p>
-                    <a href="#" class="btn btn-default" aria-label="Read more about LearnPLUS">Read More</a>
+                    <a href="https://www.eurosatgroup.com/" class="btn btn-default" aria-label="Read more about Eurosat Group">Read More</a>
                 </div>
             </div>
 
@@ -164,8 +154,8 @@ class Footer extends HTMLElement {
                         <hr>
                     </div>
                     <ul class="contact-details">
-                        <li><i class="fa fa-link"></i> <a href="http://www.yoursite.com" target="_blank" aria-label="Visit our website">www.yoursite.com</a></li>
-                        <li><i class="fa fa-envelope"></i> <a href="mailto:info@yoursite.com" aria-label="Send email to info@eurosatgroup.com</a></li>
+                        <li><i class="fa fa-link"></i> <a href="https://www.eurosatgroup.com/" target="_blank" aria-label="Visit our website">www.eurosatgroup.com</a></li>
+                        <li><i class="fa fa-envelope"></i> <a href="mailto:info@eurosatgroup.com" aria-label="Send email to info@eurosatgroup.com</a></li>
                         <li><i class="fa fa-phone"></i> +256 700 274249</li>
                         <li><i class="fa fa-fax"></i> +256 753 660000</li>
                         <li><i class="fa fa-home"></i> Plot 2A, Ssembeguya Road, Keti Falawo, Kawempe - Kampala. Uganda</li>
@@ -241,7 +231,7 @@ class WhyUS extends HTMLElement {
                 </h4>
             </div>
             <div class="col-md-3">
-                <a href="#" class="btn btn-primary btn-block" aria-label="Contact us">Get In Touch</a>
+                <a href="page-contact.html" class="btn btn-primary btn-block" aria-label="Contact us">Get In Touch</a>
             </div>
         </div>
     </div>
