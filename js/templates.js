@@ -258,25 +258,29 @@ class OurClients extends HTMLElement {
             </div>
         </div>
 
-        <!-- Client Logos -->
+        <!-- Client Logos Slider -->
         <div class="row">
-            <div class="col-md-2 col-sm-4">
-                <img src="upload/school8.png" alt="Client 1" class="img-responsive img-thumbnail" aria-label="Client 1">
-            </div>
-            <div class="col-md-2 col-sm-4">
-                <img src="upload/school7.png" alt="Client 2" class="img-responsive img-thumbnail" aria-label="Client 2">
-            </div>
-            <div class="col-md-2 col-sm-4">
-                <img src="upload/school6.png" alt="Client 3" class="img-responsive img-thumbnail" aria-label="Client 3">
-            </div>
-            <div class="col-md-2 col-sm-4">
-                <img src="upload/school5.png" alt="Client 4" class="img-responsive img-thumbnail" aria-label="Client 4">
-            </div>
-            <div class="col-md-2 col-sm-4">
-                <img src="upload/school4.png" alt="Client 5" class="img-responsive img-thumbnail" aria-label="Client 5">
-            </div>
-            <div class="col-md-2 col-sm-4">
-                <img src="upload/school3.png" alt="Client 6" class="img-responsive img-thumbnail" aria-label="Client 6">
+            <div class="client-logos-container">
+                <div class="client-logos">
+                    <div class="client-logo">
+                        <img src="upload/school8.png" alt="Client 1" class="img-responsive img-thumbnail" aria-label="Client 1">
+                    </div>
+                    <div class="client-logo">
+                        <img src="upload/school7.png" alt="Client 2" class="img-responsive img-thumbnail" aria-label="Client 2">
+                    </div>
+                    <div class="client-logo">
+                        <img src="upload/school6.png" alt="Client 3" class="img-responsive img-thumbnail" aria-label="Client 3">
+                    </div>
+                    <div class="client-logo">
+                        <img src="upload/school5.png" alt="Client 4" class="img-responsive img-thumbnail" aria-label="Client 4">
+                    </div>
+                    <div class="client-logo">
+                        <img src="upload/school4.png" alt="Client 5" class="img-responsive img-thumbnail" aria-label="Client 5">
+                    </div>
+                    <div class="client-logo">
+                        <img src="upload/school3.png" alt="Client 6" class="img-responsive img-thumbnail" aria-label="Client 6">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
