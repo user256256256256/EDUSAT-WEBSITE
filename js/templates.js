@@ -11,7 +11,7 @@ class Topbar extends HTMLElement {
           <div class="row">
               <!-- Left-aligned text with a brief message -->
               <div class="col-md-6 text-left">
-                  <p><i class="fa fa-graduation-cap"></i>Edusat Enterprise Resource Planning</p>
+                  <p>info@eurosatgroup.com | +256 700 274 249 | +256 753 660 000</p>
               </div>
   
               <!-- Right-aligned social icons and login/register dropdown -->
@@ -28,7 +28,7 @@ class Topbar extends HTMLElement {
                       <li class="dropdown">
                           <!-- Provide the url to the ERP login route -->
                           <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="fa fa-lock"></i> Login & Register
+                              <i class="fa fa-lock"></i> Sign Up
                           </a>
                       </li>
                   </ul>
@@ -74,14 +74,13 @@ class Header extends HTMLElement {
                         <li><a href="page-features.html">Features</a></li>
                         <li><a href="page-contact.html">Contact</a></li>
                         <li><a href="page-request-demo.html">Request Demo</a></li>
-                        <li><a href="page-about.html">About us</a></li>
                     </ul>
 
                     <!-- Right-aligned navigation link (Register Now button) -->
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a class="btn btn-primary" href="page-request-demo.html">
-                                <i class="fa fa-sign-in"></i> Register Now
+                            <a class="btn btn-primary" href="#">
+                                <i class="fa fa-sign-in"></i> Log in
                             </a>
                         </li>
                     </ul>
@@ -215,23 +214,6 @@ class WhyUS extends HTMLElement {
                     <p><strong>Cost Saving</strong></p>            
                     <p>Save up to 30% on operational costs with efficient resource management</p>
                     </div>
-            </div>
-        </div>
-
-        <!-- Invisible Divider -->
-        <hr class="invis">
-
-        <!-- Callout Section -->
-        <div class="callout row">
-            <div class="col-md-9">
-                <h4>
-                    <i class="fa fa-graduation-cap fa-3x alignleft" aria-hidden="true"></i>
-                    Edusat ERP, is a completely Web-based Enterprise Resource Planning system enabled with a Mobile App that uses a normal computer and Smart Phones to deliver the best combination of features, function and usability. 
-                    Edusat ERP is designed meticulously to meet the customized needs of Academic Institutions spanning from Primary to Advanced Levels. With a robust architecture and intuitive interface, Edusat ERP streamlines administrative processes, enhances academic management, and ensures financial transparency, empowering educational institutions to focus more on their core mission of delivering quality education.
-                </h4>
-            </div>
-            <div class="col-md-3">
-                <a href="page-contact.html" class="btn btn-primary btn-block" aria-label="Contact us">Get In Touch</a>
             </div>
         </div>
     </div>

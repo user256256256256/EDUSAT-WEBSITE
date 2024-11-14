@@ -135,8 +135,8 @@
 }
 
 .ttmenu .navbar-brand img {
-    max-width: 7rem;
-    max-height: 6.5rem;
+    max-width: 8rem;
+    max-height: 7rem;
     padding-bottom: 1rem;
 }
 
@@ -583,3 +583,4 @@
   to {
     opacity: 1;
   }
+}
