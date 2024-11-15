@@ -102,34 +102,59 @@
 </section>
 
 <section class="white section">
-<div class="container">
-<div class="row contact-wrapper">
-<div class="col-md-9 col-sm-9 col-xs-12 content-widget">
-<div class="widget-title">
-<h4>Request Form</h4>
-<hr>
-</div>
-<div id="contact_form" class="contact_form row">
-<div id="message"></div>
-<form id="contactform" action="http://templatevisual.com/demo/learnplus/contact.php" name="contactform" method="post">
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-<input type="text" name="name" id="name" class="form-control" placeholder="Name *">
-<input type="text" name="email" id="email" class="form-control" placeholder="Email *">
-<input type="text" name="name" id="website" class="form-control" placeholder="Website">
-</div>
-<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-<textarea class="form-control" name="comments" id="comments" rows="6" placeholder=""></textarea>
-<button type="submit" value="SEND" id="submit" class="btn btn-primary btn-block">Send Message</button>
-</div>
-</form>
-</div>
-</div>
+  <!-- Main container for the section -->
+  <div class="container">
+    <!-- Row wrapper for contact form -->
+    <div class="row contact-wrapper">
+      <!-- Content widget to hold the contact form -->
+      <div class="col-md-9 col-sm-9 col-xs-12 content-widget">
+        
+        <!-- Widget title -->
+        <div class="widget-title">
+          <h4>Contact Form</h4>
+          <hr>
+        </div>
 
-<!-- Contact details template -->
-<contact-details></contact-details>
+        <!-- Contact form section -->
+        <div id="contact_form" class="contact_form row">
+          
+          <!-- Message display section (e.g., error/success messages) -->
+          <div id="message"></div>
 
-</div>
-</div>
+          <!-- Contact form with POST method to the specified URL -->
+          <form id="contactform" action="" name="contactform" method="post">
+            
+            <!-- Form input fields for user information (Name, Email, Website) -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <!-- Name input field -->
+              <input type="text" name="name" id="name" class="form-control" placeholder="Name *" required>
+              <!-- Email input field -->
+              <input type="email" name="email" id="email" class="form-control" placeholder="Email *" required>
+              <!-- Website input field (optional) -->
+              <input type="url" name="school" id="school" class="form-control" placeholder="School Name">
+
+              <input type="url" name="phone" id="phone" class="form-control" placeholder="Phone">
+
+              <input type="url" name="address" id="address" class="form-control" placeholder="Country">
+
+            </div>
+
+            <!-- Textarea for user comments or message -->
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+              <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Your message here..." required></textarea>
+              
+              <!-- Submit button for the form -->
+              <button type="submit" value="SEND" id="submit" class="btn btn-primary btn-block">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div> <!-- End of content-widget -->
+
+      <!-- Contact details template -->
+    <contact-details></contact-details>
+
+    </div> <!-- End of row -->
+  </div> <!-- End of container -->
 </section>
 
 <!-- Footer template -->

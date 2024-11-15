@@ -356,27 +356,27 @@ class ContactDetails extends HTMLElement {
             <!-- Website Link -->
             <li>
                 <i class="fa fa-link" aria-hidden="true"></i>
-                <a href="https://www.yoursite.com" target="_blank" rel="noopener noreferrer" title="Visit our website">www.yoursite.com</a>
+                <a href="https://www.eurosatgroup.com" target="_blank" rel="noopener noreferrer" title="Visit our website">www.eurosatgroup.com</a>
             </li>
             <!-- Email Address -->
             <li>
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:info@yoursite.com" title="Email us">info@yoursite.com</a>
+                <a href="mailto:info@edusatoperations.com" title="Email us">info@edusatoperations.com</a>
             </li>
             <!-- Phone Number -->
             <li>
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>+90 123 45 67</span>
+                <span>+256 700 274249</span>
             </li>
             <!-- Fax Number -->
             <li>
                 <i class="fa fa-fax" aria-hidden="true"></i>
-                <span>+90 123 45 68</span>
+                <span> +256 753 660000</span>
             </li>
             <!-- Physical Address -->
             <li>
                 <i class="fa fa-home" aria-hidden="true"></i>
-                <span>INC 22 Elizabeth Str. Melbourne, Victoria 8777</span>
+                <span>Plot 2A, Ssembeguya Road, Keti Falawo, Kawempe - Kampala. Uganda</span>
             </li>
         </ul>
     </div>
