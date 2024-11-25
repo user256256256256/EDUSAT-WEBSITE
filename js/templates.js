@@ -10,8 +10,8 @@ class Topbar extends HTMLElement {
       <div class="container">
           <div class="row">
               <!-- Left-aligned text with a brief message -->
-              <div class="col-md-6 text-left">
-                  <p>info@eurosatgroup.com | +256 700 274 249 | +256 753 660 000</p>
+              <div class="col-md-6 text-left text-lowercase">
+                  <p>info@edusatoperations.com | +256 700 274 249 | +256 753 660 000</p>
               </div>
   
               <!-- Right-aligned social icons and login/register dropdown -->
@@ -235,7 +235,7 @@ class OurClients extends HTMLElement {
             <div class="col-md-12">
                 <div class="section-title text-center">
                     <h4>Our Clients</h4>
-                    <p>Universities That Love Working With Us and Our Teachers</p>
+                    <p>Which schools that love working with us? </p>
                 </div>
             </div>
         </div>
