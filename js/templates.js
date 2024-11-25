@@ -11,7 +11,7 @@ class Topbar extends HTMLElement {
           <div class="row">
               <!-- Left-aligned text with a brief message -->
               <div class="col-md-6 text-left text-lowercase">
-                  <p>info@edusatoperations.com | +256 700 274 249 | +256 753 660 000</p>
+                  <p>services@edusaterp.com | +256 700 274 249 | +256 753 660 000</p>
               </div>
   
               <!-- Right-aligned social icons and login/register dropdown -->
@@ -361,7 +361,7 @@ class ContactDetails extends HTMLElement {
             <!-- Email Address -->
             <li>
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:info@edusatoperations.com" title="Email us">info@edusatoperations.com</a>
+                <a href="mailto:services@edusaterp.com" title="Email us">services@edusaterp.com</a>
             </li>
             <!-- Phone Number -->
             <li>

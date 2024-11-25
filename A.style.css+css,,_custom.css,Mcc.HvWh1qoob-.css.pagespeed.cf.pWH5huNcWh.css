@@ -63,9 +63,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.796), rgba(255, 255, 255, 0)); */
-    background: linear-gradient(to right, rgba(73, 73, 73, 0.4), rgba(255, 255, 255, 0));
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.099), rgba(255, 255, 255, 0)); */
+    background: linear-gradient(to right, rgba(73, 73, 73, 0.099), rgba(255, 255, 255, 0));
     /* background: linear-gradient(to right, rgba(171, 205, 231, 0.796), rgba(255, 255, 255, 0)); */
+    /* background: white; */
 
 
     z-index: 1; /* Ensure overlay is above the image but behind other content */
@@ -74,4 +75,8 @@
 .tp-banner li img {
     position: relative;
     z-index: 0; /* Ensure the image is behind the overlay */
+}
+
+* {
+    
 }
