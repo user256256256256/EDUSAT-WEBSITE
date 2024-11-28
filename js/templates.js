@@ -8,30 +8,9 @@ class Topbar extends HTMLElement {
         <!-- Topbar Section -->
 <div class="topbar">
       <div class="container">
-          <div class="row">
-              <!-- Left-aligned text with a brief message -->
-              <div class="col-md-6 text-left text-lowercase">
+          <div class="text-center">
+              <div class="text-center text-lowercase">
                   <p>services@edusaterp.com | +256 700 274 249 | +256 753 660 000</p>
-              </div>
-  
-              <!-- Right-aligned social icons and login/register dropdown -->
-              <div class="col-md-6 text-right">
-                  <ul class="list-inline">
-                      <!-- Social media icons -->
-                      <li>
-                         <!-- <a class="social" href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
-                          <a class="social" href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>  -->
-                          <a class="social" aria-label="Chat on WhatsApp" href="https://wa.me/+256700274249" aria-label="Whatsapp"><i class="fa fa-whatsapp"></i></a>
-                      </li>
-  
-                      <!-- Dropdown for Login and Register -->
-                      <li class="dropdown">
-                          <!-- Provide the url to the ERP login route -->
-                          <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="fa fa-lock"></i> Sign Up
-                          </a>
-                      </li>
-                  </ul>
               </div>
           </div>
       </div>
@@ -351,7 +330,7 @@ class ContactDetails extends HTMLElement {
     </div>
 
     <!-- Contact Information List -->
-    <div class="contact-list">
+    <div class="contact-list text-black">
         <ul class="contact-details">
             <!-- Website Link -->
             <li>
@@ -385,3 +364,11 @@ class ContactDetails extends HTMLElement {
     }
 }
 customElements.define('contact-details', ContactDetails)
+
+class WaActionBtn extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+         <a aria-label="Chat on WhatsApp" href="https://wa.me/+256779185563" target="_blank" class="btn btn-lg btn-primary rounded-circle wa-action-btn "><i class="fa fa-whatsapp"></i></a>
+        `
+    }
+}
