@@ -108,21 +108,10 @@ customElements.define('end-bar', Endbar)
 class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <!-- Footer Section -->
+<!-- Footer Section -->
 <footer class="dark footer section">
     <div class="container">
         <div class="row">
-            <!-- About LearnPLUS Widget -->
-            <div class="col-md-3 col-md-6 col-xs-12">
-                <div class="widget">
-                    <div class="widget-title">
-                        <h4>About Eurosat</h4>
-                        <hr>
-                    </div>
-                    <p>Eurosat Group provides the highest quality in Enterprise Resource Planning systems and services to meet the demand of Academic Institutions today.                    </p>
-                    <a href="https://www.eurosatgroup.com/" class="btn btn-default" aria-label="Read more about Eurosat Group">Read More</a>
-                </div>
-            </div>
 
             <!-- Contact Details Widget -->
             <div class="col-md-3 col-md-6 col-xs-12">
@@ -140,10 +129,60 @@ class Footer extends HTMLElement {
                     </ul>
                 </div>
             </div>
+
+            <!-- Contact Details Widget -->
+            <div class="col-md-3 col-md-6 col-xs-12">
+                <div class="widget">
+                    <div class="widget-title">
+                        <h4>Quick Links</h4>
+                        <hr>
+                    </div>
+                    <ul class="contact-details">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="page-features.html">Features</a></li>
+                        <li><a href="page-contact.html">Contact</a></li>
+                        <li><a href="page-request-demo.html">Request Demo</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-6 col-xs-12">
+                <div class="widget">
+                    <div class="widget-title">
+                        <h4>Key Features</h4>
+                        <hr>
+                    </div>
+                    <ul class="contact-details">
+                        <li><i class="fa fa-cogs"></i> Curriculum Customization</li>
+                        <li><i class="fa fa-chalkboard"></i> Class Management</li>
+                        <li><i class="fa fa-wallet"></i> Expense Management</li>
+                        <li><i class="fa fa-piggy-bank"></i> Budgeting & Financial Planning</li>
+                        <li><i class="fa fa-chart-bar"></i> Accounting, Report & Analytics</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- About LearnPLUS Widget -->
+            <div class="col-md-3 col-md-6 col-xs-12">
+                <div class="widget">
+                    <div class="widget-title">
+                        <h4>Powered By Eurosat</h4>
+                        <hr>
+                    </div>
+                    <p>Eurosat Group provides the highest quality in Enterprise Resource Planning systems and services to meet the demand of Academic Institutions today.                    </p>
+                    <a href="https://www.eurosatgroup.com/" class="btn btn-default" aria-label="Read more about Eurosat Group">Read More</a>
+                     <!-- Logo with navigation link -->
+                     <!-- <div class="footer-logo">
+                        <a class="" href="index.html">
+                            <img src="images/edusat-logo.png" alt="EduSat Logo">
+                        </a>
+                    </div> -->
+                </div>
+            </div>
         </div>
     </div>
 </footer>
-
         `
     }
 }
@@ -368,7 +407,8 @@ customElements.define('contact-details', ContactDetails)
 class WaActionBtn extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-         <a aria-label="Chat on WhatsApp" href="https://wa.me/+256779185563" target="_blank" class="btn btn-lg btn-primary rounded-circle wa-action-btn "><i class="fa fa-whatsapp"></i></a>
+         <a aria-label="Chat on WhatsApp" href="https://wa.me/+256779185563" target="_blank" class="btn btn-lg btn-primary rounded-circle wa-action-btn "><i class="fab fa-whatsapp"></i></a>
         `
     }
 }
+customElements.define('wa-action-btn', WaActionBtn);
