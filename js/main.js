@@ -26,7 +26,7 @@ $(document).ready(function() {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,  // On very small screens, show 2 items
+                    slidesToShow: 3,  // On very small screens, show 2 items
                     slidesToScroll: 1
                 }
             }
