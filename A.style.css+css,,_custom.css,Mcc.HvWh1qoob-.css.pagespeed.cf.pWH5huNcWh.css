@@ -12,7 +12,7 @@
 
 .client-logo {
     margin: 10px;                   /* Space between logos */
-    width: 120px;                   /* Set a fixed width for each logo */
+    max-width: 100px;                   /* Set a fixed width for each logo */
     height: auto;                   /* Maintain aspect ratio */
     padding: 10px;  /* Add padding around each logo */
     display: flex;
@@ -28,7 +28,7 @@
 /* Make it responsive */
 @media (max-width: 768px) {
     .client-logo {
-        width: 80px; /* Adjust for smaller screens */
+        width: auto; /* Adjust for smaller screens */
     }
 }
 
@@ -36,21 +36,21 @@
 /* Tablet view (screens between 768px and 1024px) */
 @media (max-width: 1024px) {
     .client-logo {
-        width: 100px;               /* Reduce the width for tablet */
+        width: auto;               /* Reduce the width for tablet */
     }
 }
 
 /* Mobile view (screens less than 768px) */
 @media (max-width: 768px) {
     .client-logo {
-        width: 80px;                /* Further reduce the width for mobile */
+        width: auto;                /* Further reduce the width for mobile */
     }
 }
 
 /* Mobile view (screens less than 480px) */
 @media (max-width: 480px) {
     .client-logo {
-        width: 70px;                /* Further reduce the width for very small screens */
+        width: auto;                /* Further reduce the width for very small screens */
     }
 }
 
@@ -111,4 +111,18 @@
     position: relative;
 }
 
+/* Style for the feature-list box */
+.feature-list {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+    padding: 5px;
+}
 
+/* Hover effect */
+.feature-list:hover {
+    background-color: #161f60;  /* Background color on hover */
+    color: white;                /* Text color on hover */
+}
+
+.feature-list i {
+    transition: color 0.3s ease; /* Smooth transition for icon color */
+}

@@ -246,14 +246,14 @@ class OurClients extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <!-- Our Clients Section -->
-<section class="grey section">
+<section class="grey section"> 
     <div class="container">
         <!-- Section Title -->
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center">
                     <h4>Our Clients</h4>
-                    <p>Which schools that love working with us? </p>
+                    <p>Which schools that love working with us?</p>
                 </div>
             </div>
         </div>
@@ -261,24 +261,24 @@ class OurClients extends HTMLElement {
         <!-- Client Logos Slider -->
         <div class="row">
             <div class="client-logos-container">
-                <div class="client-logos">
+                <div class="client-logos slick-slider">
                     <div class="client-logo">
-                        <img src="upload/school8.png" alt="Client 1" class="img-responsive img-thumbnail" aria-label="Client 1">
+                        <img src="upload/school8.png" alt="Client 1" class="img-responsive img-thumbnail">
                     </div>
                     <div class="client-logo">
-                        <img src="upload/school7.png" alt="Client 2" class="img-responsive img-thumbnail" aria-label="Client 2">
+                        <img src="upload/school7.png" alt="Client 2" class="img-responsive img-thumbnail">
                     </div>
                     <div class="client-logo">
-                        <img src="upload/school6.png" alt="Client 3" class="img-responsive img-thumbnail" aria-label="Client 3">
+                        <img src="upload/school6.png" alt="Client 3" class="img-responsive img-thumbnail">
                     </div>
                     <div class="client-logo">
-                        <img src="upload/school5.png" alt="Client 4" class="img-responsive img-thumbnail" aria-label="Client 4">
+                        <img src="upload/school5.png" alt="Client 4" class="img-responsive img-thumbnail">
                     </div>
                     <div class="client-logo">
-                        <img src="upload/school4.png" alt="Client 5" class="img-responsive img-thumbnail" aria-label="Client 5">
+                        <img src="upload/school4.png" alt="Client 5" class="img-responsive img-thumbnail">
                     </div>
                     <div class="client-logo">
-                        <img src="upload/school3.png" alt="Client 6" class="img-responsive img-thumbnail" aria-label="Client 6">
+                        <img src="upload/school3.png" alt="Client 6" class="img-responsive img-thumbnail">
                     </div>
                 </div>
             </div>

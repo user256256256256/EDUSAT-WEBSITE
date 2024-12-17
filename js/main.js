@@ -7,6 +7,7 @@ $(document).ready(function() {
         arrows: true,        // Display navigation arrows
         infinite: true,      // Enable infinite scrolling (looping)
         vertical: false,     // Ensure the slider is horizontal
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 1024,
