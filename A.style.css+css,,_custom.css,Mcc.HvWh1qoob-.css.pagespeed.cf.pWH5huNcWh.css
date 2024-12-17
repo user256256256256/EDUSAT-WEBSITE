@@ -12,7 +12,7 @@
 
 .client-logo {
     margin: 10px;                   /* Space between logos */
-    max-width: 100px;                   /* Set a fixed width for each logo */
+    width: 100px;                   /* Set a fixed width for each logo */
     height: auto;                   /* Maintain aspect ratio */
     padding: 10px;  /* Add padding around each logo */
     display: flex;
