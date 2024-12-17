@@ -27,31 +27,23 @@
 
 /* Make it responsive */
 @media (max-width: 768px) {
-    .client-logo {
-        width: auto; /* Adjust for smaller screens */
-    }
+    
 }
 
 
 /* Tablet view (screens between 768px and 1024px) */
 @media (max-width: 1024px) {
-    .client-logo {
-        width: auto;               /* Reduce the width for tablet */
-    }
+    
 }
 
 /* Mobile view (screens less than 768px) */
 @media (max-width: 768px) {
-    .client-logo {
-        width: auto;                /* Further reduce the width for mobile */
-    }
+    
 }
 
 /* Mobile view (screens less than 480px) */
 @media (max-width: 480px) {
-    .client-logo {
-        width: auto;                /* Further reduce the width for very small screens */
-    }
+   
 }
 
 /* Dark overlay effect */
