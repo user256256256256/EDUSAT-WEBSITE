@@ -53,6 +53,9 @@
   <!-- Custom site styles, combining style and custom settings -->
   <link rel="stylesheet" type="text/css" href="A.style.css%2bcss%2c%2c_custom.css%2cMcc.HvWh1qoob-.css.pagespeed.cf.pWH5huNcWh.css"/>
 
+  <!-- Add the jQuery CDN before your requestDemo.js script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   
@@ -125,14 +128,14 @@
           <div id="message"></div>
 
           <!-- Contact form with POST method to the specified URL -->
-          <form id="contactform" action="" name="contactform" method="post">
+          <form id="requestDemoform" name="sentMessage" novalidate="novalidate">
             
             <!-- Form input fields for user information (Name, Email, Website) -->
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
               <!-- Name input field -->
-              <input type="text" name="name" id="name" class="form-control" placeholder="Name *" required>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Name " >
               <!-- Email input field -->
-              <input type="email" name="email" id="email" class="form-control" placeholder="Email *" required>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Email " >
               <!-- Website input field (optional) -->
               <input type="url" name="school" id="school" class="form-control" placeholder="School Name">
 
@@ -144,10 +147,12 @@
 
             <!-- Textarea for user comments or message -->
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-              <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Your message here..." required></textarea>
+              <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Your message here..." ></textarea>
               
+              <p id="status-message" class="text-center alert py-3 rounded"></p>
+
               <!-- Submit button for the form -->
-              <button type="submit" value="SEND" id="submit" class="btn btn-primary btn-block">Send Message</button>
+              <button id="sendRequestButton" type="submit" class="btn btn-primary btn-block">Send Message</button>
             </div>
           </form>
         </div>
@@ -172,6 +177,7 @@
 </div>
 
 <script src="js/templates.js"></script>
+<script src="requestDemo/requestDemo.js"></script>
 
 <script src="js/jquery.min.js.pagespeed.jm.iDyG3vc4gw.js"></script>
 <script src="js/bootstrap.min.js%2bretina.js%2bwow.js.pagespeed.jc.pMrMbVAe_E.js"></script><script>eval(mod_pagespeed_gFRwwUbyVc);</script>

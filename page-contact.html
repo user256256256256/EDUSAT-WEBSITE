@@ -26,17 +26,6 @@
   <!-- Favicon for the website (icon shown in the browser tab) -->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
   
-  <!-- Apple touch icons for iOS devices (icons displayed when added to the home screen) -->
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
-  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png"/>
-  <link rel="apple-touch-icon" sizes="72x72" href="images/xapple-touch-icon-72x72.png.pagespeed.ic.lf5d8kCpOf.png"/>
-  <link rel="apple-touch-icon" sizes="76x76" href="images/xapple-touch-icon-76x76.png.pagespeed.ic.ATZZpSeito.png"/>
-  <link rel="apple-touch-icon" sizes="114x114" href="images/xapple-touch-icon-114x114.png.pagespeed.ic.Fi5O5s2tzL.png"/>
-  <link rel="apple-touch-icon" sizes="120x120" href="images/xapple-touch-icon-120x120.png.pagespeed.ic.uPQH0sygdV.png"/>
-  <link rel="apple-touch-icon" sizes="144x144" href="images/xapple-touch-icon-144x144.png.pagespeed.ic.yZ9-_sm5OF.png"/>
-  <link rel="apple-touch-icon" sizes="152x152" href="images/xapple-touch-icon-152x152.png.pagespeed.ic.gThaVrKtXF.png"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="images/xapple-touch-icon-180x180.png.pagespeed.ic.Q8Pmsj5fQM.png"/>
-  
   <!-- Stylesheets for various visual components of the page -->
   <!-- Slider plugin settings CSS -->
   <link rel="stylesheet" type="text/css" href="rs-plugin/css/A.settings.css.pagespeed.cf.xeOyGChsgq.css" media="screen"/>
@@ -52,6 +41,9 @@
   
   <!-- Custom site styles, combining style and custom settings -->
   <link rel="stylesheet" type="text/css" href="A.style.css%2bcss%2c%2c_custom.css%2cMcc.HvWh1qoob-.css.pagespeed.cf.pWH5huNcWh.css"/>
+
+  <!-- Add the jQuery CDN before your contact.js script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -125,26 +117,28 @@
           <div id="message"></div>
 
           <!-- Contact form with POST method to the specified URL -->
-          <form id="contactform" action="" name="contactform" method="post">
-            
-            <!-- Form input fields for user information (Name, Email, Website) -->
+          <form id="contactform" name="sentMessage" novalidate="novalidate">
+            <!-- Form input fields for user information (Name, Email, School Name) -->
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
               <!-- Name input field -->
-              <input type="text" name="name" id="name" class="form-control" placeholder="Name *" required>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Name " >
               <!-- Email input field -->
-              <input type="email" name="email" id="email" class="form-control" placeholder="Email *" required>
-              <!-- Website input field (optional) -->
-              <input type="url" name="Shool" id="school" class="form-control" placeholder="School Name">
+              <input type="email" name="email" id="email" class="form-control" placeholder="Email " >
+              <!-- School input field (optional) -->
+              <input type="text" name="school" id="school" class="form-control" placeholder="School Name">
             </div>
 
             <!-- Textarea for user comments or message -->
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-              <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Your message here..." required></textarea>
+              <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Your message here..." ></textarea>
               
+              <p id="status-message" class="text-center alert py-3 rounded"></p>
+
               <!-- Submit button for the form -->
-              <button type="submit" value="SEND" id="submit" class="btn btn-primary btn-block">Send Message</button>
+              <button id="sendMessageButton" type="submit" class="btn btn-primary btn-block">Send Message</button>
             </div>
           </form>
+
         </div>
       </div> <!-- End of content-widget -->
 
@@ -177,6 +171,7 @@
 </div>
 
 <script src="js/templates.js"></script>
+<script src="mail/contact.js"></script>
 
 <script src="js/jquery.min.js.pagespeed.jm.iDyG3vc4gw.js"></script>
 <script src="js/bootstrap.min.js%2bretina.js%2bwow.js.pagespeed.jc.pMrMbVAe_E.js"></script><script>eval(mod_pagespeed_gFRwwUbyVc);</script>
