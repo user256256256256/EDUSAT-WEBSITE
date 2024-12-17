@@ -29,12 +29,12 @@ if (isset($_POST['senderName'], $_POST['senderEmail'], $_POST['senderMessage']))
 
     // Check if the message exceeds 250 words
     $wordCount = str_word_count($senderMessage);
-    if ($wordCount > 250) {
-        $response['error'] = "Your message exceeds the 250-word limit. Please shorten it.";
+    if ($wordCount > 250 || $wordCount < 5) {
+        $response['error'] = "Your message should be between 5 - 250 words.";
         echo json_encode($response);
         exit();
     }
-
+    
     // Setup email parameters
     $to = "sales@eurosatgroup.com"; 
     $subject = "New Message from: $senderName";
@@ -59,7 +59,7 @@ if (isset($_POST['senderName'], $_POST['senderEmail'], $_POST['senderMessage']))
     }
 } else {
     // Missing required fields
-    $response['error'] = "All required fields must be filled.";
+    $response['error'] = "All fields must be filled.";
 }
 
 // Return the JSON response

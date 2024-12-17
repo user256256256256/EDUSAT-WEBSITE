@@ -167,7 +167,7 @@ class Footer extends HTMLElement {
             <div class="col-md-3 col-md-6 col-xs-12">
                 <div class="widget">
                     <div class="widget-title">
-                        <h4>Powered By Eurosat</h4>
+                        <h4>Powered By Eurosat Group</h4>
                         <hr>
                     </div>
                     <p>Eurosat Group provides the highest quality in Enterprise Resource Planning systems and services to meet the demand of Academic Institutions today.                    </p>
@@ -209,7 +209,7 @@ class WhyUS extends HTMLElement {
         <div class="row service-center">
             <!-- Feature 1: Cirriculum Customization-->
             <div class="col-md-4 col-sm-6">
-                <div class="feature-list border-radius">
+                <div class="feature-list border-radius text-black">
                     <i>95%</i>
                     <p><strong>User Satisfaction</strong></p> 
                      <p>School owners, administrators, teachers and parents report inreased satisfaction with Edusat ERP</p>
@@ -252,8 +252,8 @@ class OurClients extends HTMLElement {
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center">
-                    <h4>Our Clients</h4>
-                    <p>Which schools that love working with us?</p>
+                    <h4>Our Partner Schools</h4>
+                    <p>Schools that love working with us?</p>
                 </div>
             </div>
         </div>
