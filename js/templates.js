@@ -209,7 +209,7 @@ class WhyUS extends HTMLElement {
         <div class="row service-center">
             <!-- Feature 1: Cirriculum Customization-->
             <div class="col-md-4 col-sm-6">
-                <div class="feature-list border-radius text-black">
+                <div class="feature-list border-radius">
                     <i>95%</i>
                     <p><strong>User Satisfaction</strong></p> 
                      <p>School owners, administrators, teachers and parents report inreased satisfaction with Edusat ERP</p>
